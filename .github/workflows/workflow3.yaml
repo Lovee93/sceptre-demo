@@ -1,0 +1,17 @@
+# This workflow is to test Github secrets
+name: Test github secrets
+on:
+  workflow_dispatch:
+      
+jobs:
+  job1:
+    name: 'test Github secret'
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: test github secrets
+        run: |
+          echo ${{ secrets.TEST_SECRET }}
+    
