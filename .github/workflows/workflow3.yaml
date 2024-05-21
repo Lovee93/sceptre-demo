@@ -1,7 +1,9 @@
 # This workflow is to test Github secrets
 name: Test github secrets
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - test-github-secrets
       
 jobs:
   job1:
