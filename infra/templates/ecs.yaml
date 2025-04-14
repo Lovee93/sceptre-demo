@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::LanguageExtensions'
-Description: Deploy a service on AWS Fargate, hosted in a private subnet and only accessible internally
+Description: Deploy a service on AWS Fargate, hosted in a public subnet
 
 Parameters:
   paramProjectName:
